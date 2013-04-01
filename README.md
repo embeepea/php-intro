@@ -1,14 +1,17 @@
-    php hello.php
+1. `php hello.php`
 
-    server php 12345
+1. `server php 12345`
+
     browse to http://localhost:12345/hello.php
 
-    php hello2.php name=Mark
+1.  `php hello2.php name=Mark`
 
-    server 12345
+1.  `server 12345`
+
     browse to http://localhost:12345/hello2.php?name=Mark
 
-    php hello3.php name=Mark
+1.  `php hello3.php name=Mark`
 
-    server 12345
+1.  `server 12345`
+
     browse to http://localhost:12345/hello3.php?name=Mark
