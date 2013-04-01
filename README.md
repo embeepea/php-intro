@@ -1,6 +1,6 @@
 1. `php hello.php`
 
-1. `server php 12345`
+1. `server 12345`
 
     browse to [http://localhost:12345/hello.php](http://localhost:12345/hello.php)
 
