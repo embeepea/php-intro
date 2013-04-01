@@ -2,6 +2,6 @@
 
 include('args.php');
 
-print "hi there, " . $_GET['name'] . "!\n";
+print "Hello " . $_GET['name'] . "!\n";
 
 ?>

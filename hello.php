@@ -1,5 +1,5 @@
 <?php
 
-print "hi there!\n";
+print "Hello, world!\n";
 
 ?>
