@@ -21,3 +21,5 @@
 1.  `server 12345`
 
     browse to [http://localhost:12345/hello4.php?name=Mark](http://localhost:12345/hello4.php?name=Mark)
+
+1.  browse to http://dev.nemac.org/~mbp/php-intro/hello4.php?name=Mark
