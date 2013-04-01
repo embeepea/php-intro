@@ -3,7 +3,7 @@
 $port = shift;
 
 if (!$port) {
-    die "usage: server CMD port\n";
+    die "usage: server port\n";
 }
 
 $js = <<EOF
