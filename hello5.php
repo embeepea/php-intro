@@ -2,5 +2,4 @@
 
 print "Hello, world!\n";
 
-?>
 
