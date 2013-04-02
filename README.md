@@ -153,7 +153,7 @@ GET /hello8.php?name=Mark&color=brown
 
 ```
 
-> [mbp@fog ~]$ telnet localhost 12345
+> [mbp@fog ~]$ telnet 127.0.0.1 2345
 > <br>Trying 127.0.0.1...
 > <br>Connected to localhost.
 > <br>Escape character is '^]'.
