@@ -82,6 +82,23 @@ GET /hello.php
 
 ```
 
+> [mbp@fog ~]$ telnet localhost 12345
+> Trying ::1...
+> telnet: connect to address ::1: Connection refused
+> Trying 127.0.0.1...
+> Connected to localhost.
+> Escape character is '^]'.
+> GET /hello.php
+> 
+> HTTP/1.1 200 OK
+> X-Powered-By: PHP/5.3.3
+> Content-type: text/html
+> Date: Tue, 02 Apr 2013 17:50:25 GMT
+> Connection: close
+> 
+> Hello, world!
+> Connection closed by foreign host.
+
 ```
 telnet 127.0.0.1 12345
 GET /hello3.php
