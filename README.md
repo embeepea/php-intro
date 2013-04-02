@@ -1,7 +1,7 @@
 hello.php
 ---------
 ```php
-    Hello, world!
+Hello, world!
 ```
 
 hello2.php
@@ -15,25 +15,25 @@ print "Hello, world!\n";
 hello3.php
 ----------
 ```php
-    <?php
-    print "Hello, world!\n";
-    ?>
-    
-    Isn't this awesome!
+<?php
+print "Hello, world!\n";
+?>
+
+Isn't this awesome!
 ```
 
 hello4.php
 ----------
 ```php
-    <?php
-    print "Hello, world!\n";
-    ?>
+<?php
+print "Hello, world!\n";
+?>
 
 ```    
 
 hello5.php
 ----------
 ```php
-    <?php
-    print "Hello, world!\n";
+<?php
+print "Hello, world!\n";
 ```
