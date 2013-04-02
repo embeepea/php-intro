@@ -76,7 +76,7 @@ running an http server
 ----------------------
 on server: `./server -h 12345`
 <br>on client: 
-```telnet 127.0.0.1 12345
+```
+telnet 127.0.0.1 12345
 GET /hello.php
 ```
-
