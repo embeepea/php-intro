@@ -19,7 +19,7 @@ hello3.php
 print "Hello, world!\n";
 ?>
 
-Isn't this awesome!
+PHP is awesome!
 ```
 
 hello4.php
@@ -37,3 +37,20 @@ hello5.php
 <?php
 print "Hello, world!\n";
 ```
+
+hello6.php
+----------
+```php
+Hello <?php print "world"?>!
+```
+
+running over the network
+------------------------
+on server: `./server 12345 hello6.php`
+
+on client: `telnet 127.0.0.1 12345`
+
+
+on server: `./server 12345 hello3.php`
+
+on client: `telnet 127.0.0.1 12345`

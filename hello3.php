@@ -1,7 +1,5 @@
 <?php
-
 print "Hello, world!\n";
-
 ?>
 
-Isn't this awesome!
+PHP is awesome!
