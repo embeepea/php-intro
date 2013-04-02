@@ -60,6 +60,7 @@ browsers need metadata
    2. blank line
    3. body
  * Example:
+```
         HTTP/1.1 200 OK
         X-Powered-By: PHP/5.3.3
         Content-type: text/html
@@ -69,3 +70,4 @@ browsers need metadata
         Hello, world!
         
         PHP is awesome!
+```
