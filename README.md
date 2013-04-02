@@ -148,23 +148,19 @@ back to command-line
 on server: `./server -h 12345`
 <br>on client: 
 ```
-telnet 127.0.0.1 12345
+$ telnet 127.0.0.1 12345
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
 GET /hello8.php?name=Mark&color=brown
 
-```
+HTTP/1.1 200 OK
+X-Powered-By: PHP/5.3.3
+Content-type: text/html
+Date: Tue, 02 Apr 2013 20:06:03 GMT
+Connection: close
 
-> [mbp@fog ~]$ telnet 127.0.0.1 12345
-> <br>Trying 127.0.0.1...
-> <br>Connected to localhost.
-> <br>Escape character is '^]'.
-> <br>GET /hello8.php?name=Mark&color=brown
-> <br>
-> <br>HTTP/1.1 200 OK
-> <br>X-Powered-By: PHP/5.3.3
-> <br>Content-type: text/html
-> <br>Date: Tue, 02 Apr 2013 20:06:03 GMT
-> <br>Connection: close
-> <br>
-> <br>Hello Mark, your favorite color is brown,
-> <br>and the current time is 2013 Apr 02 (Tue) 16:06:03.
-> <br>Connection closed by foreign host.
+Hello Mark, your favorite color is brown,
+and the current time is 2013 Apr 02 (Tue) 16:06:03.
+Connection closed by foreign host.
+```
