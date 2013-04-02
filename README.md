@@ -154,17 +154,17 @@ GET /hello8.php?name=Mark&color=brown
 ```
 
 > [mbp@fog ~]$ telnet localhost 12345
-> Trying 127.0.0.1...
-> Connected to localhost.
-> Escape character is '^]'.
-> GET /hello8.php?name=Mark&color=brown
-> 
-> HTTP/1.1 200 OK
-> X-Powered-By: PHP/5.3.3
-> Content-type: text/html
-> Date: Tue, 02 Apr 2013 20:06:03 GMT
-> Connection: close
-> 
-> Hello Mark, your favorite color is brown,
-> and the current time is 2013 Apr 02 (Tue) 16:06:03.
-> Connection closed by foreign host.
+> <br>Trying 127.0.0.1...
+> <br>Connected to localhost.
+> <br>Escape character is '^]'.
+> <br>GET /hello8.php?name=Mark&color=brown
+> <br>
+> <br>HTTP/1.1 200 OK
+> <br>X-Powered-By: PHP/5.3.3
+> <br>Content-type: text/html
+> <br>Date: Tue, 02 Apr 2013 20:06:03 GMT
+> <br>Connection: close
+> <br>
+> <br>Hello Mark, your favorite color is brown,
+> <br>and the current time is 2013 Apr 02 (Tue) 16:06:03.
+> <br>Connection closed by foreign host.
