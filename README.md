@@ -127,3 +127,14 @@ viewing in a browser
 on server: `./server -h 12345`
 <br>in browser: [http://127.0.0.1:12345/hello.php](http://127.0.0.1:12345/hello.php)
 <br>in browser: [http://127.0.0.1:12345/hello3.php](http://127.0.0.1:12345/hello3.php)
+
+hello7.php
+----------
+```php
+<?php
+include('args.php');
+?>
+Hello <?php print $_REQUEST['name']?>!
+```
+on server: `./server -h 12345`
+<br>in browser: [http://127.0.0.1:12345/hello7.php?name=Mark](http://127.0.0.1:12345/hello7.php?name=Mark)
