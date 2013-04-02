@@ -47,10 +47,7 @@ Hello <?php print "world"?>!
 running over the network
 ------------------------
 on server: `./server 12345 hello6.php`
-
-on client: `telnet 127.0.0.1 12345`
-
+<br>on client: `telnet 127.0.0.1 12345`
 
 on server: `./server 12345 hello3.php`
-
-on client: `telnet 127.0.0.1 12345`
+<br>on client: `telnet 127.0.0.1 12345`
