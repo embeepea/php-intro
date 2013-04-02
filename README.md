@@ -81,7 +81,6 @@ telnet 127.0.0.1 12345
 GET /hello.php
 
 ```
-
 > [mbp@fog ~]$ telnet localhost 12345
 > <br>Trying ::1...
 > <br>telnet: connect to address ::1: Connection refused
@@ -104,6 +103,24 @@ telnet 127.0.0.1 12345
 GET /hello3.php
 
 ```
+> [mbp@fog ~]$ telnet localhost 12345
+> <br>Trying ::1...
+> <br>telnet: connect to address ::1: Connection refused
+> <br>Trying 127.0.0.1...
+> <br>Connected to localhost.
+> <br>Escape character is '^]'.
+> <br>GET /hello3.php
+> <br>
+> <br>HTTP/1.1 200 OK
+> <br>X-Powered-By: PHP/5.3.3
+> <br>Content-type: text/html
+> <br>Date: Tue, 02 Apr 2013 17:52:27 GMT
+> <br>Connection: close
+> <br>
+> <br>Hello, world!
+> <br>
+> <br>PHP is awesome!
+> <br>Connection closed by foreign host.
 
 viewing in a browser
 --------------------
