@@ -79,4 +79,18 @@ on server: `./server -h 12345`
 ```
 telnet 127.0.0.1 12345
 GET /hello.php
+
 ```
+
+```
+telnet 127.0.0.1 12345
+GET /hello3.php
+
+```
+
+viewing in a browser
+--------------------
+on server: `./server -h 12345`
+in browser: [http://127.0.0.1:12345/hello.php](http://127.0.0.1:12345/hello.php)
+
+in browser: [http://127.0.0.1:12345/hello3.php](http://127.0.0.1:12345/hello3.php)

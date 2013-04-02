@@ -52,7 +52,6 @@ if (http_mode) {
 
                  res.writeHeader(200, header);
                  body = body_lines.join("\n");
-                 console.log(body);
                  res.end(body);
              });
     }).listen(port);
