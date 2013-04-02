@@ -204,7 +204,7 @@ on server: `./server -h 12345`
 
 <!-- ***************************************** -->
 
-##http via telnet
+##hello8.php with parameters via telnet
 on server: `./server -h 12345`
 <br>on client: 
 ```
