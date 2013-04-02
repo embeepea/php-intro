@@ -183,8 +183,7 @@ on server: `./server -h 12345`
 
 <!-- ***************************************** -->
 
-hello7.php
-----------
+##hello7.php
 ```php
 Hello <?php print $_REQUEST['name']?>!
 ```
@@ -194,8 +193,7 @@ on server: `./server -h 12345`
 
 <!-- ***************************************** -->
 
-hello8.php
-----------
+##hello8.php
 ```php
 <?php $date = date("Y M d (D) H:i:s"); ?>
 Hello <?php print $_REQUEST['name']?>, your favorite color is <?php print $_REQUEST['color']?>,
@@ -204,8 +202,9 @@ and the current time is <?php print $date ?>.
 on server: `./server -h 12345`
 <br>in browser: [http://127.0.0.1:12345/hello8.php?name=Mark&color=brown](http://127.0.0.1:12345/hello8.php?name=Mark&color=brown)
 
-back to command-line
---------------------
+<!-- ***************************************** -->
+
+##back to command-line
 on server: `./server -h 12345`
 <br>on client: 
 ```
@@ -225,3 +224,8 @@ Hello Mark, your favorite color is brown,
 and the current time is 2013 Apr 02 (Tue) 16:06:03.
 Connection closed by foreign host.
 ```
+
+<!-- ***************************************** -->
+
+##using apache instad of our own 'server' program
+<br>in browser: http://fog.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
