@@ -61,13 +61,13 @@ browsers need metadata
    3. body
  * Example:
 ```
-        HTTP/1.1 200 OK
-        X-Powered-By: PHP/5.3.3
-        Content-type: text/html
-        Date: Tue, 02 Apr 2013 17:26:17 GMT
-        Connection: close
-        
-        Hello, world!
-        
-        PHP is awesome!
+    HTTP/1.1 200 OK
+    X-Powered-By: PHP/5.3.3
+    Content-type: text/html
+    Date: Tue, 02 Apr 2013 17:26:17 GMT
+    Connection: close
+    
+    Hello, world!
+    
+    PHP is awesome!
 ```
