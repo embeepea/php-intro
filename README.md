@@ -81,9 +81,7 @@ telnet 127.0.0.1 12345
 GET /hello.php
 
 ```
-> [mbp@fog ~]$ telnet localhost 12345
-> <br>Trying ::1...
-> <br>telnet: connect to address ::1: Connection refused
+> [mbp@fog ~]$ telnet 127.0.0.1 12345
 > <br>Trying 127.0.0.1...
 > <br>Connected to localhost.
 > <br>Escape character is '^]'.
@@ -103,9 +101,7 @@ telnet 127.0.0.1 12345
 GET /hello3.php
 
 ```
-> [mbp@fog ~]$ telnet localhost 12345
-> <br>Trying ::1...
-> <br>telnet: connect to address ::1: Connection refused
+> [mbp@fog ~]$ telnet 127.0.0.1 12345
 > <br>Trying 127.0.0.1...
 > <br>Connected to localhost.
 > <br>Escape character is '^]'.
@@ -140,10 +136,35 @@ on server: `./server -h 12345`
 hello8.php
 ----------
 ```php
-<?php $date = date("Y M d (D) H:i:s "); ?>
+<?php $date = date("Y M d (D) H:i:s"); ?>
 Hello <?php print $_REQUEST['name']?>, your favorite color is <?php print $_REQUEST['color']?>,
-and the current time is <?php print $date ?>
+and the current time is <?php print $date ?>.
 ```
 on server: `./server -h 12345`
 <br>in browser: [http://127.0.0.1:12345/hello8.php?name=Mark&color=brown](http://127.0.0.1:12345/hello8.php?name=Mark&color=brown)
 
+back to command-line
+--------------------
+on server: `./server -h 12345`
+<br>on client: 
+```
+telnet 127.0.0.1 12345
+GET /hello8.php?name=Mark&color=brown
+
+```
+
+> [mbp@fog ~]$ telnet localhost 12345
+> Trying 127.0.0.1...
+> Connected to localhost.
+> Escape character is '^]'.
+> GET /hello8.php?name=Mark&color=brown
+> 
+> HTTP/1.1 200 OK
+> X-Powered-By: PHP/5.3.3
+> Content-type: text/html
+> Date: Tue, 02 Apr 2013 20:06:03 GMT
+> Connection: close
+> 
+> Hello Mark, your favorite color is brown,
+> and the current time is 2013 Apr 02 (Tue) 16:06:03.
+> Connection closed by foreign host.
