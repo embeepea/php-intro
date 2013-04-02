@@ -77,46 +77,40 @@ running an http server
 on server: `./server -h 12345`
 <br>on client: 
 ```
-telnet 127.0.0.1 12345
+$ telnet 127.0.0.1 12345
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
 GET /hello.php
 
+HTTP/1.1 200 OK
+X-Powered-By: PHP/5.3.3
+Content-type: text/html
+Date: Tue, 02 Apr 2013 17:50:25 GMT
+Connection: close
+
+Hello, world!
+Connection closed by foreign host.
 ```
-> [mbp@fog ~]$ telnet 127.0.0.1 12345
-> <br>Trying 127.0.0.1...
-> <br>Connected to localhost.
-> <br>Escape character is '^]'.
-> <br>GET /hello.php
-> <br>
-> <br>HTTP/1.1 200 OK
-> <br>X-Powered-By: PHP/5.3.3
-> <br>Content-type: text/html
-> <br>Date: Tue, 02 Apr 2013 17:50:25 GMT
-> <br>Connection: close
-> <br>
-> <br>Hello, world!
-> <br>Connection closed by foreign host.
 
 ```
-telnet 127.0.0.1 12345
+$ telnet 127.0.0.1 12345
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
 GET /hello3.php
 
+HTTP/1.1 200 OK
+X-Powered-By: PHP/5.3.3
+Content-type: text/html
+Date: Tue, 02 Apr 2013 17:52:27 GMT
+Connection: close
+
+Hello, world!
+
+PHP is awesome!
+Connection closed by foreign host.
 ```
-> [mbp@fog ~]$ telnet 127.0.0.1 12345
-> <br>Trying 127.0.0.1...
-> <br>Connected to localhost.
-> <br>Escape character is '^]'.
-> <br>GET /hello3.php
-> <br>
-> <br>HTTP/1.1 200 OK
-> <br>X-Powered-By: PHP/5.3.3
-> <br>Content-type: text/html
-> <br>Date: Tue, 02 Apr 2013 17:52:27 GMT
-> <br>Connection: close
-> <br>
-> <br>Hello, world!
-> <br>
-> <br>PHP is awesome!
-> <br>Connection closed by foreign host.
 
 viewing in a browser
 --------------------
