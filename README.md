@@ -1,19 +1,30 @@
-hello.php
----------
+##hello.php
 ```php
 Hello, world!
 ```
 
-hello2.php
-----------
+###`$ php hello.php`:
+> ```
+> Hello, world!'
+> ```
+
+<!-- ***************************************** -->
+
+##hello2.php
 ```php
 <?php
 print "Hello, world!\n";
 ?>
 ```
 
-hello3.php
-----------
+###`$ php hello2.php`:
+> ```
+> Hello, world!'
+> ```
+
+<!-- ***************************************** -->
+
+##hello3.php
 ```php
 <?php
 print "Hello, world!\n";
@@ -22,8 +33,16 @@ print "Hello, world!\n";
 PHP is awesome!
 ```
 
-hello4.php
-----------
+###`$ php hello3.php`:
+> ```
+> Hello, world!'
+> 
+> PHP is awesome!
+> ```
+
+<!-- ***************************************** -->
+
+##hello4.php
 ```php
 <?php
 print "Hello, world!\n";
@@ -31,18 +50,38 @@ print "Hello, world!\n";
 
 ```    
 
-hello5.php
-----------
+###`$ php hello4.php`:
+> ```
+> Hello, world!'
+> 
+> ```
+
+<!-- ***************************************** -->
+
+##hello5.php
 ```php
 <?php
 print "Hello, world!\n";
 ```
 
-hello6.php
-----------
+###`$ php hello5.php`:
+> ```
+> Hello, world!'
+> ```
+
+<!-- ***************************************** -->
+
+##hello6.php
 ```php
 Hello <?php print "world"?>!
 ```
+
+###`$ php hello6.php`:
+> ```
+> Hello, world!'
+> ```
+
+<!-- ***************************************** -->
 
 running over the network
 ------------------------
@@ -51,6 +90,8 @@ on server: `./server 12345 hello6.php`
 
 on server: `./server 12345 hello3.php`
 <br>on client: `telnet 127.0.0.1 12345`
+
+<!-- ***************************************** -->
 
 browsers need metadata
 ----------------------
@@ -71,6 +112,8 @@ browsers need metadata
     
     PHP is awesome!
 ```
+
+<!-- ***************************************** -->
 
 running an http server
 ----------------------
@@ -112,11 +155,15 @@ PHP is awesome!
 Connection closed by foreign host.
 ```
 
+<!-- ***************************************** -->
+
 viewing in a browser
 --------------------
 on server: `./server -h 12345`
 <br>in browser: [http://127.0.0.1:12345/hello.php](http://127.0.0.1:12345/hello.php)
 <br>in browser: [http://127.0.0.1:12345/hello3.php](http://127.0.0.1:12345/hello3.php)
+
+<!-- ***************************************** -->
 
 hello7.php
 ----------
@@ -126,6 +173,8 @@ Hello <?php print $_REQUEST['name']?>!
 on server: `./server -h 12345`
 <br>in browser: [http://127.0.0.1:12345/hello7.php?name=Mark](http://127.0.0.1:12345/hello7.php?name=Mark)
 
+
+<!-- ***************************************** -->
 
 hello8.php
 ----------
