@@ -131,9 +131,6 @@ on server: `./server -h 12345`
 hello7.php
 ----------
 ```php
-<?php
-include('args.php');
-?>
 Hello <?php print $_REQUEST['name']?>!
 ```
 on server: `./server -h 12345`
