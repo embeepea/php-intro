@@ -130,29 +130,6 @@ browsers need metadata
     
     PHP is awesome!
 ```
-   1. header:
-
-```
-    HTTP/1.1 200 OK
-    X-Powered-By: PHP/5.3.3
-    Content-type: text/html
-    Date: Tue, 02 Apr 2013 17:26:17 GMT
-    Connection: close
-```
-
-   2. blank line:
-
-```
-
-```
-
-   3. body:
-
-```
-    Hello, world!
-    
-    PHP is awesome!
-```
 
 <!-- ***************************************** -->
 
