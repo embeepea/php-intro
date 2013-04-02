@@ -86,10 +86,28 @@ Hello <?php print "world"?>!
 running over the network
 ------------------------
 on server: `./server 12345 hello6.php`
-<br>on client: `telnet 127.0.0.1 12345`
+<br>on client:
+```
+$ telnet 127.0.0.1 12345
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+Hello world!
+Connection closed by foreign host.
+```
 
 on server: `./server 12345 hello3.php`
-<br>on client: `telnet 127.0.0.1 12345`
+<br>on client: 
+```
+birch:~ mbp$ telnet 127.0.0.1 12345
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+Hello, world!
+
+PHP is awesome!
+Connection closed by foreign host.
+```
 
 <!-- ***************************************** -->
 
