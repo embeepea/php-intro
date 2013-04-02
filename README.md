@@ -228,4 +228,4 @@ Connection closed by foreign host.
 <!-- ***************************************** -->
 
 ##using apache instad of our own 'server' program
-<br>in browser: http://fog.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
+in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
