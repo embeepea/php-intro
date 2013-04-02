@@ -204,7 +204,7 @@ on server: `./server -h 12345`
 
 <!-- ***************************************** -->
 
-##back to command-line
+##http via telnet
 on server: `./server -h 12345`
 <br>on client: 
 ```
