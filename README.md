@@ -343,7 +343,7 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
      myTest(12); // ==> 12
      ```
 
-* Control Structures
+* Conditionals
 
    * `if`
 
@@ -402,4 +402,42 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
          print "Your favorite color is neither red, blue, or green!";
      }
      ```
+
+* Loops
+
+   * while
+
+     ```php
+     <?php
+     $i=1;
+     while ($i<=5) {
+         print "The number is " . $i . "\n";
+         $i++;
+     }
+     ```
+
+     ```
+     The number is 1
+     The number is 2
+     The number is 3
+     The number is 4
+     The number is 5
+     ```
+
+   * do ... while
+     ```php
+     <?php
+     $i=6;
+     do {
+       print "The number is " . $i . "\n";
+       $i++;
+     } while ($i<=5);
+     ```
+
+     ```
+     The number is 6
+     ```
+
+
+   * for
 
