@@ -507,6 +507,7 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
       * index always starts with 0, then 1, 2, etc
 
    * _associative_ arrays
+
       * items are associated with an abitrary _key_ rather than an integer index
 
       ```php
@@ -528,3 +529,58 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
       </tr>
       </table>
 
+      * can also assign items individually
+
+      ```php
+      <?php
+          $foods = array()
+          $foods['dessert'] = 'cake';
+          $foods['vegetable'] = 'carrots';
+          $foods['drink'] = 'coffee';
+          // same as: $foods = array('dessert' => 'cake',  'vegetable' => 'carrots',  'drink' => 'coffee');
+      ```
+
+   * _multidimensional_ arrays
+
+      * an item in one array can be another array
+
+      ```php
+      <?php
+          $foods = array( 'Mark'      => array('dessert' => 'cake',         'vegetable' => 'carrots',  'drink' => 'coffee'),
+                          'Caroline'  => array('dessert' => 'key lime pie', 'vegetable' => 'kale',     'drink' => 'kombucha'),
+                          'Derek'     => array('dessert' => 'sherbet',      'vegetable' => 'spinach',  'drink' => 'sprite')    );
+
+          function printFoods($name) {
+              global $foods;
+              print "<b>" . $name . ":</b>\n";
+              print "<table>\n";
+              print "<tr><td>Dessert</td><td>" . $foods[$name]['dessert'] . "</td></tr>\n";
+              print "<tr><td>Vegetable</td><td>" . $foods[$name]['vegetable'] . "</td></tr>\n";
+              print "<tr><td>Drink</td><td>" . $foods[$name]['drink'] . "</td></tr>\n";
+              print "</table>\n";
+          }
+          printFoods('Mark');
+          printFoods('Caroline');
+          printFoods('Derek');
+      ```
+
+      ```
+      <b>Mark:</b>
+      <table>
+      <tr><td>Dessert</td><td>cake</td></tr>
+      <tr><td>Vegetable</td><td>carrots</td></tr>
+      <tr><td>Drink</td><td>coffee</td></tr>
+      </table>
+      <b>Caroline:</b>
+      <table>
+      <tr><td>Dessert</td><td>key lime pie</td></tr>
+      <tr><td>Vegetable</td><td>kale</td></tr>
+      <tr><td>Drink</td><td>kombucha</td></tr>
+      </table>
+      <b>Derek:</b>
+      <table>
+      <tr><td>Dessert</td><td>sherbet</td></tr>
+      <tr><td>Vegetable</td><td>spinach</td></tr>
+      <tr><td>Drink</td><td>sprite</td></tr>
+      </table>
+      ```
