@@ -229,7 +229,7 @@ Connection closed by foreign host.
 
 <!-- ***************************************** -->
 
-##using apache instad of our own 'server' program
+##using apache instead of our own 'server' program
 in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
 
 <!-- ***************************************** -->
@@ -239,6 +239,7 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
 *  Resources
    * www.w3schools.com introduction: http://www.w3schools.com/php/php_intro.asp
    * (Free) Drupalize.me video: http://drupalize.me/videos/php-themers
+   * Online PHP reference manual: http://php.net/manual/en
    * Exercises: http://phpexercises.com
 
 
@@ -260,7 +261,7 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
       * can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
       * may not contain spaces
       * are case sensitive ($y and $Y are two different variables)
-     valid names: $x, $X, $firstName, $name1, $first_name
+     <br>valid names: $x, $X, $firstName, $name1, $first_name
      <br>invalid names: $2ndName, $first name, $%
    * no need to declare variables before using them
    * 'loosely typed'; basic types are:
@@ -294,6 +295,7 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
 
 * Functions
    * encapsulate snippets of code to be executed
+   * you can write your own functions
      ```php
      <?php
      function printEmailHeader($to,$from) {
@@ -308,10 +310,90 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
      > Date: 2013-04-03 12:02:22
      > To: mickey@disney.com
      > ```
-
+   * there are hundreds of built-in functions; see http://php.net/manual/en/funcref.php for reference.
 
 * Variable Scope
-   * local
    * global
+     ```
+     <?php
+     $x=5;
+     ```
+   * local
+     ```
+     <?php
+     $x=5; // global scope
+     
+     function myTest() {
+       print $x; // local scope
+     }
+     
+     myTest(); // ==> no output!
+     ```
    * static
-   * parameter
+     <br>(rarely used)
+   * parameter - like local but value passed to function
+     ```
+     <?php
+     $x=5; // global scope
+     
+     function myTest($x) {
+       print $x; // parameter scope
+     }
+     
+     myTest(12); // ==> 12
+     ```
+
+* Control Structures
+
+   * `if`
+     ```php
+     <?php
+     $t=date("H");
+     if ($t<"20") {
+       print "Have a good day!";
+     }
+     ```
+
+   * `if/else`
+```
+<?php
+$t=date("H");
+if ($t<"20") {
+  print "Have a good day!";
+}
+else {
+  print "Have a good night!";
+}
+```
+   * `if/else if/else`
+```
+<?php
+$t=date("H");
+if ($t<"10") {
+  print "Have a good morning!";
+} else if ($t<"20") {
+  print "Have a good day!";
+} else {
+  print "Have a good night!";
+}
+?>
+```
+   * `switch`
+```
+<?php
+$favcolor="red";
+switch ($favcolor) {
+case "red":
+  print "Your favorite color is red!";
+  break;
+case "blue":
+  print "Your favorite color is blue!";
+  break;
+case "green":
+  print "Your favorite color is green!";
+  break;
+default:
+  print "Your favorite color is neither red, blue, or green!";
+}
+```
+
