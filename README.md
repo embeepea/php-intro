@@ -412,7 +412,7 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
      $i=1;
      while ($i<=5) {
          print "The number is " . $i . "\n";
-         $i++;
+         $i = $i + 1;
      }
      ```
 
@@ -429,8 +429,8 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
      <?php
      $i=6;
      do {
-       print "The number is " . $i . "\n";
-       $i++;
+         print "The number is " . $i . "\n";
+         $i++; // (same as $i = $i + 1;)
      } while ($i<=5);
      ```
 
@@ -440,4 +440,18 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
 
 
    * for
+     ```php
+     <?php
+     for ($i=1; $i<=5; $i++) {
+         print "The number is " . $i . "<br>";
+     }
 
+     ```
+
+     ```
+     The number is 1
+     The number is 2
+     The number is 3
+     The number is 4
+     The number is 5
+     ```
