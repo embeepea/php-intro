@@ -343,6 +343,19 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
      myTest(12); // ==> 12
      ```
 
+   * global variales can be accessed anywhere by declaring them with the `global` keyword
+     ```
+     <?php
+     $x=5; // global scope
+     
+     function myTest() {
+       global $x;
+       print $x; // global scope
+     }
+     
+     myTest(); // ==> 5
+     ```
+
 * Conditionals
 
    * `if`
@@ -546,17 +559,17 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
 
       ```php
       <?php
-          $foods = array( 'Mark'      => array('dessert' => 'cake',         'vegetable' => 'carrots',  'drink' => 'coffee'),
-                          'Caroline'  => array('dessert' => 'key lime pie', 'vegetable' => 'kale',     'drink' => 'kombucha'),
-                          'Derek'     => array('dessert' => 'sherbet',      'vegetable' => 'spinach',  'drink' => 'sprite')    );
+          $foodprefs = array( 'Mark'      => array('dessert' => 'cake',         'vegetable' => 'carrots',  'drink' => 'coffee'),
+                              'Caroline'  => array('dessert' => 'key lime pie', 'vegetable' => 'kale',     'drink' => 'kombucha'),
+                              'Derek'     => array('dessert' => 'sherbet',      'vegetable' => 'spinach',  'drink' => 'sprite')    );
 
           function printFoods($name) {
-              global $foods;
+              global $foodprefs;
               print "<b>" . $name . ":</b>\n";
               print "<table>\n";
-              print "<tr><td>Dessert</td><td>" . $foods[$name]['dessert'] . "</td></tr>\n";
-              print "<tr><td>Vegetable</td><td>" . $foods[$name]['vegetable'] . "</td></tr>\n";
-              print "<tr><td>Drink</td><td>" . $foods[$name]['drink'] . "</td></tr>\n";
+              print "<tr><td>Dessert</td><td>" . $foodprefs[$name]['dessert'] . "</td></tr>\n";
+              print "<tr><td>Vegetable</td><td>" . $foodprefs[$name]['vegetable'] . "</td></tr>\n";
+              print "<tr><td>Drink</td><td>" . $foodprefs[$name]['drink'] . "</td></tr>\n";
               print "</table>\n";
           }
           printFoods('Mark');
@@ -593,7 +606,7 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
       foreach ($foods as $x) {
           print $x . "\n";
       }
-      
+      ```
       
       ```
       bananna
@@ -621,14 +634,14 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
 
           ```php
           <?php
-          $foods = array( 'Mark'      => array('dessert' => 'cake',         'vegetable' => 'carrots',  'drink' => 'coffee'),
-                          'Caroline'  => array('dessert' => 'key lime pie', 'vegetable' => 'kale',     'drink' => 'kombucha'),
-                          'Derek'     => array('dessert' => 'sherbet',      'vegetable' => 'spinach',  'drink' => 'sprite')    );
+          $foodprefs = array( 'Mark'      => array('dessert' => 'cake',         'vegetable' => 'carrots',  'drink' => 'coffee'),
+                              'Caroline'  => array('dessert' => 'key lime pie', 'vegetable' => 'kale',     'drink' => 'kombucha'),
+                              'Derek'     => array('dessert' => 'sherbet',      'vegetable' => 'spinach',  'drink' => 'sprite')    );
 
-          foreach ($foods as $name => $foodprefs) {
+          foreach ($foodprefs as $name => $foods) {
               print "<b>" . $name . ":</b>\n";
               print "<table>\n";
-              foreach ($foodprefs as $category => $food) {
+              foreach ($foods as $category => $food) {
                   print "<tr><td>" . $category . "</td><td>" . $food . "</td></tr>\n";
               }
               print "</table>\n";
