@@ -356,45 +356,50 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
      ```
 
    * `if/else`
-```
-<?php
-$t=date("H");
-if ($t<"20") {
-  print "Have a good day!";
-}
-else {
-  print "Have a good night!";
-}
-```
+
+     ```php
+     <?php
+     $t=date("H");
+     if ($t<"20") {
+       print "Have a good day!";
+     }
+     else {
+       print "Have a good night!";
+     }
+     ```
+
    * `if/else if/else`
-```
-<?php
-$t=date("H");
-if ($t<"10") {
-  print "Have a good morning!";
-} else if ($t<"20") {
-  print "Have a good day!";
-} else {
-  print "Have a good night!";
-}
-?>
-```
+
+     ```php
+     <?php
+     $t=date("H");
+     if ($t<"10") {
+       print "Have a good morning!";
+     } else if ($t<"20") {
+       print "Have a good day!";
+     } else {
+       print "Have a good night!";
+     }
+     ?>
+     ```
+
    * `switch`
-```
-<?php
-$favcolor="red";
-switch ($favcolor) {
-case "red":
-  print "Your favorite color is red!";
-  break;
-case "blue":
-  print "Your favorite color is blue!";
-  break;
-case "green":
-  print "Your favorite color is green!";
-  break;
-default:
-  print "Your favorite color is neither red, blue, or green!";
-}
-```
+
+     ```php
+     <?php
+     $favcolor="red";
+     switch ($favcolor) {
+     case "red":
+       print "Your favorite color is red!";
+       break;
+     case "blue":
+       print "Your favorite color is blue!";
+       break;
+     case "green":
+       print "Your favorite color is green!";
+       break;
+     default:
+       print "Your favorite color is neither red, blue, or green!";
+     }
+     ```
 
