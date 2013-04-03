@@ -445,7 +445,6 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
      for ($i=1; $i<=5; $i++) {
          print "The number is " . $i . "<br>";
      }
-
      ```
 
      ```
@@ -455,3 +454,77 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
      The number is 4
      The number is 5
      ```
+
+* Arrays
+
+   * arrays are variables that store more than one value
+
+     ```php
+     <?php
+     $foods = array('cake', 'carrots', 'coffee');
+     print $foods[0]; // ==> cake
+     print $foods[1]; // ==> carrots
+     print $foods[2]; // ==> coffee
+     ```
+     
+     ```php
+     <?php
+     $foods = array();
+     $foods[0] = 'cake';
+     $foods[1] = 'carrots';
+     $foods[2] = 'coffee';
+     print $foods[0]; // ==> cake
+     print $foods[1]; // ==> carrots
+     print $foods[2]; // ==> coffee
+     ```
+
+   * length of an array: `count()` function
+
+     ```php
+     <?php
+     $foods = array('cake', 'carrots', 'coffee');
+     print count($foods); // ==> 3
+     ```
+
+   * looping over the items in an array
+
+     ```php
+     <?php
+     $foods = array('cake', 'carrots', 'coffee');
+     for ($i=0; $i<count($foods); $i++) {
+         print "Mark likes " . $foods[$i] . "\n";
+     }
+     ```
+
+     ```
+     Mark likes cake
+     Mark likes carrots
+     Mark likes coffee
+     ```
+
+   * the above are _indexed_ arrays
+      * items within the array are indicated by their position, or index
+      * index always starts with 0, then 1, 2, etc
+
+   * _associative_ arrays
+      * items are associated with an abitrary _key_ rather than an integer index
+
+      ```php
+      <?php
+          $foods = array('dessert' => 'cake',  'vegetable' => 'carrots',  'drink' => 'coffee');
+      ?>
+      <table>
+      <tr><td>Dessert</td><td><?php print $foods['dessert'];?></td></tr>
+      <tr><td>Vegetable</td><td><?php print $foods['vegetable'];?></td></tr>
+      <tr><td>Drink</td><td><?php print $foods['drink'];?></td></tr>
+      </tr>
+      </table>
+      ```
+
+      <table>
+      <tr><td>Dessert</td><td>cake</td></tr>
+      <tr><td>Vegetable</td><td>carrots</td></tr>
+      <tr><td>Drink</td><td>coffee</td></tr>
+      </tr>
+      </table>
+
