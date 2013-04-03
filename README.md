@@ -241,13 +241,16 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
   * (Free) Drupalize.me video: http://drupalize.me/videos/php-themers
   * Exercises: http://phpexercises.com
 
+
 * Basic PHP syntax
   * intermixed with HTML, use `<?php` and `?>` to enter and leave PHP mode
   * commands in PHP mode end with semicolon `;`
 
+
 * Comments
   * `//` to end of line
   * block comments deliminted by `/*` and `*/`; block comments may NOT be nested
+
 
 * Variables
   * store values
@@ -271,6 +274,7 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
     ** arrays
        <br>more on arrays later
 
+
 * Operators
   * the usual arithmetic operators: +, -, *, /
     ```php
@@ -289,6 +293,7 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
     print $full_name; // ==> 'Fred Flintstone' (without the quotes)
     ```
 
+
 * Functions
   * encapsulate snippets of code to be executed
     ```php
@@ -305,6 +310,7 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
     > Date: 2013-04-03 12:02:22
     > To: mickey@disney.com
     > ```
+
 
 * Variable Scope
   * local
