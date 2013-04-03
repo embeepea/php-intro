@@ -564,7 +564,6 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
           printFoods('Derek');
       ```
 
-      ```
       <b>Mark:</b>
       <table>
       <tr><td>Dessert</td><td>cake</td></tr>
@@ -583,4 +582,3 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
       <tr><td>Vegetable</td><td>spinach</td></tr>
       <tr><td>Drink</td><td>sprite</td></tr>
       </table>
-      ```
