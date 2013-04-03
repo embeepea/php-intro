@@ -351,7 +351,7 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
      <?php
      $t=date("H");
      if ($t<"20") {
-       print "Have a good day!";
+         print "Have a good day!";
      }
      ```
 
@@ -361,10 +361,10 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
      <?php
      $t=date("H");
      if ($t<"20") {
-       print "Have a good day!";
+         print "Have a good day!";
      }
      else {
-       print "Have a good night!";
+         print "Have a good night!";
      }
      ```
 
@@ -374,11 +374,11 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
      <?php
      $t=date("H");
      if ($t<"10") {
-       print "Have a good morning!";
+         print "Have a good morning!";
      } else if ($t<"20") {
-       print "Have a good day!";
+         print "Have a good day!";
      } else {
-       print "Have a good night!";
+         print "Have a good night!";
      }
      ?>
      ```
@@ -390,16 +390,16 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
      $favcolor="red";
      switch ($favcolor) {
      case "red":
-       print "Your favorite color is red!";
-       break;
+         print "Your favorite color is red!";
+         break;
      case "blue":
-       print "Your favorite color is blue!";
-       break;
+         print "Your favorite color is blue!";
+         break;
      case "green":
-       print "Your favorite color is green!";
-       break;
+         print "Your favorite color is green!";
+         break;
      default:
-       print "Your favorite color is neither red, blue, or green!";
+         print "Your favorite color is neither red, blue, or green!";
      }
      ```
 
