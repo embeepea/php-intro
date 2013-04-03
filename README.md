@@ -236,85 +236,82 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
 
 #Langauge Fundamentals
 
-* Resources
-  * www.w3schools.com introduction: http://www.w3schools.com/php/php_intro.asp
-  * (Free) Drupalize.me video: http://drupalize.me/videos/php-themers
-  * Exercises: http://phpexercises.com
+*  Resources
+   * www.w3schools.com introduction: http://www.w3schools.com/php/php_intro.asp
+   * (Free) Drupalize.me video: http://drupalize.me/videos/php-themers
+   * Exercises: http://phpexercises.com
 
 
-* Basic PHP syntax
-  * intermixed with HTML, use `<?php` and `?>` to enter and leave PHP mode
-  * commands in PHP mode end with semicolon `;`
+*  Basic PHP syntax
+   * intermixed with HTML, use `<?php` and `?>` to enter and leave PHP mode
+   * commands in PHP mode end with semicolon `;`
 
 
-* Comments
-  * `//` to end of line
-  * block comments deliminted by `/*` and `*/`; block comments may NOT be nested
+*  Comments
+   * `//` to end of line
+   * block comments deliminted by `/*` and `*/`; block comments may NOT be nested
 
 
-* Variables
-  * store values
-  * variable names
-    * start with the $ sign, followed by the name of the variable
-    * must begin with a letter or the underscore character
-    * can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
-    * may not contain spaces
-    * are case sensitive ($y and $Y are two different variables)
-    valid names: $x, $X, $firstName, $name1, $first_name
-    <br>invalid names: $2ndName, $first name, $%
-  * no need to declare variables before using them
-  * 'loosely typed'
-    * basic types
-    ** integers
-       <br>$x = 2;
-    ** floating point numbers
-       <br>$x = 3.14159;
-    ** strings
-       <br>$name = "Mark"
-    ** arrays
-       <br>more on arrays later
-
+*  Variables
+   * store values
+   * variable names
+      * start with the $ sign, followed by the name of the variable
+      * must begin with a letter or the underscore character
+      * can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+      * may not contain spaces
+      * are case sensitive ($y and $Y are two different variables)
+     valid names: $x, $X, $firstName, $name1, $first_name
+     <br>invalid names: $2ndName, $first name, $%
+   * no need to declare variables before using them
+   * 'loosely typed'; basic types are:
+      * integers
+        <br>$x = 2;
+      * floating point numbers
+        <br>$x = 3.14159;
+      * strings
+        <br>$name = "Mark"
+      * arrays
+        <br>more on arrays later
 
 * Operators
-  * the usual arithmetic operators: +, -, *, /
-    ```php
-    <?php
-    $x = 2;
-    $y = 4;
-    $z = $x + $y;
-    print $z; // ==> 6
-    ```
-  * string concatenation: .
-    ```php
-    <?php
-    $first_name = "Fred";
-    $last_name = "Flintstone";
-    $full_name = $first_name . " " . $last_name;
-    print $full_name; // ==> 'Fred Flintstone' (without the quotes)
-    ```
+   * the usual arithmetic operators: +, -, *, /
+     ```php
+     <?php
+     $x = 2;
+     $y = 4;
+     $z = $x + $y;
+     print $z; // ==> 6
+     ```
+   * string concatenation: .
+     ```php
+     <?php
+     $first_name = "Fred";
+     $last_name = "Flintstone";
+     $full_name = $first_name . " " . $last_name;
+     print $full_name; // ==> 'Fred Flintstone' (without the quotes)
+     ```
 
 
 * Functions
-  * encapsulate snippets of code to be executed
-    ```php
-    <?php
-    function printEmailHeader($to,$from) {
-      print("From: " . $from . "\n");
-      print("Date: " . date("Y-m-d H:i:s") . "\n");
-      print("To: " . $to . "\n");
-    }
-    printEmailHeader("mickey@disney.com", "bugs@disney.com");
-    ```
-    > ```
-    > From: bugs@disney.com
-    > Date: 2013-04-03 12:02:22
-    > To: mickey@disney.com
-    > ```
+   * encapsulate snippets of code to be executed
+     ```php
+     <?php
+     function printEmailHeader($to,$from) {
+       print("From: " . $from . "\n");
+       print("Date: " . date("Y-m-d H:i:s") . "\n");
+       print("To: " . $to . "\n");
+     }
+     printEmailHeader("mickey@disney.com", "bugs@disney.com");
+     ```
+     > ```
+     > From: bugs@disney.com
+     > Date: 2013-04-03 12:02:22
+     > To: mickey@disney.com
+     > ```
 
 
 * Variable Scope
-  * local
-  * global
-  * static
-  * parameter
-
+   * local
+   * global
+   * static
+   * parameter
