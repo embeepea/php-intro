@@ -582,3 +582,74 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
       <tr><td>Vegetable</td><td>spinach</td></tr>
       <tr><td>Drink</td><td>sprite</td></tr>
       </table>
+
+* `foreach` - special kind of loop for dealing with arrays
+
+   * `foreach` with indexed array
+
+      ```php
+      <?php
+      $foods = array('bananna', 'beet', 'beer');
+      foreach ($foods as $x) {
+          print $x . "\n";
+      }
+      
+      
+      ```
+      bananna
+      beet
+      beer
+      ```
+
+   * `foreach` with associative array
+
+     ```php
+     <?php
+     $foods = array('dessert' => 'cake',  'vegetable' => 'carrots',  'drink' => 'coffee');
+     foreach ($foods as $key => $value) {
+         print $key . ' : ' . $value . "\n";
+     }
+     ```
+     
+     ```
+     dessert : cake
+     vegetable : carrots
+     drink : coffee
+     ```
+
+   * `foreach` with multidimensional array
+
+          ```php
+          <?php
+          $foods = array( 'Mark'      => array('dessert' => 'cake',         'vegetable' => 'carrots',  'drink' => 'coffee'),
+                          'Caroline'  => array('dessert' => 'key lime pie', 'vegetable' => 'kale',     'drink' => 'kombucha'),
+                          'Derek'     => array('dessert' => 'sherbet',      'vegetable' => 'spinach',  'drink' => 'sprite')    );
+
+          foreach ($foods as $name => $foodprefs) {
+              print "<b>" . $name . ":</b>\n";
+              print "<table>\n";
+              foreach ($foodprefs as $category => $food) {
+                  print "<tr><td>" . $category . "</td><td>" . $food . "</td></tr>\n";
+              }
+              print "</table>\n";
+          }
+          ```
+
+          <b>Mark:</b>
+          <table>
+          <tr><td>dessert</td><td>cake</td></tr>
+          <tr><td>vegetable</td><td>carrots</td></tr>
+          <tr><td>drink</td><td>coffee</td></tr>
+          </table>
+          <b>Caroline:</b>
+          <table>
+          <tr><td>dessert</td><td>key lime pie</td></tr>
+          <tr><td>vegetable</td><td>kale</td></tr>
+          <tr><td>drink</td><td>kombucha</td></tr>
+          </table>
+          <b>Derek:</b>
+          <table>
+          <tr><td>dessert</td><td>sherbet</td></tr>
+          <tr><td>vegetable</td><td>spinach</td></tr>
+          <tr><td>drink</td><td>sprite</td></tr>
+          </table>
