@@ -346,13 +346,13 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
 * Control Structures
 
    * `if`
-     ```php
-     <?php
-     $t=date("H");
-     if ($t<"20") {
-       print "Have a good day!";
-     }
-     ```
+```php
+<?php
+$t=date("H");
+if ($t<"20") {
+  print "Have a good day!";
+}
+```
 
    * `if/else`
 ```
