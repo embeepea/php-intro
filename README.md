@@ -311,6 +311,8 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
      > To: mickey@disney.com
      > ```
    * there are hundreds of built-in functions; see http://php.net/manual/en/funcref.php for reference.
+   * parameters are passed by value by default
+   * pass by reference via & prefix
 
 * Variable Scope
    * global
