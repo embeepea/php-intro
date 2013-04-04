@@ -415,6 +415,10 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
          print "Your favorite color is neither red, blue, or green!";
      }
      ```
+     
+   * colon syntax: if (...) : / endif;
+
+   * ?: syntax: print ($a == $b) ? "yes" : "no";
 
 * Loops
 
