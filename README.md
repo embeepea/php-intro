@@ -296,6 +296,7 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
 * Functions
    * encapsulate snippets of code to be executed
    * you can write your own functions
+
      ```php
      <?php
      function printEmailHeader($to,$from) {
@@ -305,23 +306,25 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
      }
      printEmailHeader("mickey@disney.com", "bugs@disney.com");
      ```
+
      > ```
      > From: bugs@disney.com
      > Date: 2013-04-03 12:02:22
      > To: mickey@disney.com
      > ```
+
    * there are hundreds of built-in functions; see http://php.net/manual/en/funcref.php for reference.
    * parameters are passed by value by default
    * pass by reference via & prefix
 
 * Variable Scope
    * global
-     ```
+     ```php
      <?php
      $x=5;
      ```
    * local
-     ```
+     ```php
      <?php
      $x=5; // global scope
      
