@@ -331,11 +331,13 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
      <?php
      $x=5; // global scope
      
-     function myTest() {
+     function myTest() {        
+       $x = 2;
        print $x; // local scope
      }
      
-     myTest(); // ==> no output!
+     myTest(); // ==> prints 2
+     print $x; // ==> prints 5
      ```
 
    * static
