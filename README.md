@@ -319,11 +319,14 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
 
 * Variable Scope
    * global
+
      ```php
      <?php
      $x=5;
      ```
+
    * local
+
      ```php
      <?php
      $x=5; // global scope
@@ -334,9 +337,12 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
      
      myTest(); // ==> no output!
      ```
+
    * static
      <br>(rarely used)
+
    * parameter - like local but value passed to function
+
      ```
      <?php
      $x=5; // global scope
@@ -349,6 +355,7 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
      ```
 
    * global variales can be accessed anywhere by declaring them with the `global` keyword
+
      ```
      <?php
      $x=5; // global scope
