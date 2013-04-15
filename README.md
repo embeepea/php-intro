@@ -745,7 +745,15 @@ include('weather.php');
 print_r($stations[2]);
 ```
 
-Run ex1.php both from the command line, and from a browser.
+Run ex1.php both from the command line, and from a browser:
+
+```
+php ex1.php
+```
+
+```
+http://dev.nemac.org/~username/ex1.php
+```
 
 <!-- ***************************************** -->
 ##*ex2.php*
