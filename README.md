@@ -314,6 +314,7 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
      > ```
 
    * there are hundreds of built-in functions; see http://php.net/manual/en/funcref.php for reference.
+     * `print_r` is a very useful debugging function
    * parameters are passed by value by default
    * pass by reference via & prefix
 
@@ -684,3 +685,53 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
           <tr><td>vegetable</td><td>spinach</td></tr>
           <tr><td>drink</td><td>sprite</td></tr>
           </table>
+
+#Exercises
+
+The file `weather.php` contains some station and weather
+observation data for a collection of weather stations in NC.  It
+defines two global variables: `$stations`, and `$data`.
+
+The `$stations` variable is an (indexed) array containing
+information about the weather stations; each entry in the array is
+an (associative) array with the following keys: `state`, `id`,
+`lat`, `lon`, `elev`, and `name`.
+
+The '$data' variable is an associative array giving some (fictitious) temperature
+and precipiation records for each station.  The keys in this array are station
+ids.
+
+1. *example1.php*: download a copy of 'weather.php' and write the following php program, which loads `weather.php`
+   and prints out the details for the 3rd station in the list:
+
+   ```php
+   <?php
+   include('weather.php');
+
+   print_r($stations[2]);
+   ```
+
+   Run example1.php both from the command line, and from a browser.
+
+2. *example2.php*: make a copy of example1.php, and modify it to format the results in an HTML table so that it looks something like
+   the following:
+
+   <table>
+   <tr>
+   <td>id</td>
+   <td>state</td>
+   <td>lat</td>
+   <td>lon</td>
+   <td>elev</td>
+   <td>name</td>
+   </tr>
+   <tr>
+   <td>USW00003812</td>
+   <td>NC</td>
+   <td>35.4319</td>
+   <td>-82.5375</td>
+   <td>645.3</td>
+   <td>ASHEVILLE RGNL AP</td>
+   </tr>
+   </table>
+
