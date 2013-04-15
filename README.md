@@ -697,41 +697,47 @@ information about the weather stations; each entry in the array is
 an (associative) array with the following keys: `state`, `id`,
 `lat`, `lon`, `elev`, and `name`.
 
-The '$data' variable is an associative array giving some (fictitious) temperature
+The `$data1` variable is an associative array giving some (fictitious) temperature
 and precipiation records for each station.  The keys in this array are station
 ids.
 
-1. *example1.php*: download a copy of 'weather.php' and write the following php program, which loads `weather.php`
-   and prints out the details for the 3rd station in the list:
+<!-- ***************************************** -->
+##*example1.php*
 
-   ```php
-   <?php
-   include('weather.php');
+Download a copy of 'weather.php' and write the following php program, which loads `weather.php`
+and prints out the details for the 3rd station in the list:
 
-   print_r($stations[2]);
-   ```
+```php
+<?php
+include('weather.php');
 
-   Run example1.php both from the command line, and from a browser.
+print_r($stations[2]);
+```
 
-2. *example2.php*: make a copy of example1.php, and modify it to format the results in an HTML table so that it looks something like
-   the following:
+Run example1.php both from the command line, and from a browser.
 
-   <table>
-   <tr>
-   <td>id</td>
-   <td>state</td>
-   <td>lat</td>
-   <td>lon</td>
-   <td>elev</td>
-   <td>name</td>
-   </tr>
-   <tr>
-   <td>USW00003812</td>
-   <td>NC</td>
-   <td>35.4319</td>
-   <td>-82.5375</td>
-   <td>645.3</td>
-   <td>ASHEVILLE RGNL AP</td>
-   </tr>
-   </table>
+<!-- ***************************************** -->
+##*example2.php*
+
+Make a copy of example1.php, and modify it to format the results in an HTML table so that it looks something like
+the following:
+
+<table>
+<tr>
+<td>id</td>
+<td>state</td>
+<td>lat</td>
+<td>lon</td>
+<td>elev</td>
+<td>name</td>
+</tr>
+<tr>
+<td>USW00003812</td>
+<td>NC</td>
+<td>35.4319</td>
+<td>-82.5375</td>
+<td>645.3</td>
+<td>ASHEVILLE RGNL AP</td>
+</tr>
+</table>
 
