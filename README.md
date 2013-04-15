@@ -742,3 +742,12 @@ the following:
 </tr>
 </table>
 
+<!-- ***************************************** -->
+##*example3.php*
+
+Make a copy of example2.php called example3.php, and modify it so that it accepts
+a parameter called `i` which is the index of a station in the list, and prints the details
+for the `i-th` station in the list.  So, for example, you should be able to see the details
+for the _ASHEVILLE RGNL AP_ station by going to a URl of the form
+
+http://dev.nemac.org/~username/example2.php?i=2
