@@ -234,7 +234,7 @@ in browser: http://dev.nemac.org/~mbp/php-intro/hello8.php?name=Mark&color=brown
 
 <!-- ***************************************** -->
 
-#Langauge Fundamentals
+#Language Fundamentals
 
 *  Resources
    * www.w3schools.com introduction: http://www.w3schools.com/php/php_intro.asp
