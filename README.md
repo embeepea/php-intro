@@ -704,8 +704,8 @@ ids.
 <!-- ***************************************** -->
 ##*example1.php*
 
-Download a copy of 'weather.php' and write the following php program, which loads `weather.php`
-and prints out the details for the 3rd station in the list:
+Download a copy of 'weather.php' and type the following code into a file named *example1.php*.
+This program loads `weather.php` and prints out the details for the 3rd station in the list:
 
 ```php
 <?php
@@ -719,7 +719,8 @@ Run example1.php both from the command line, and from a browser.
 <!-- ***************************************** -->
 ##*example2.php*
 
-Make a copy of example1.php, and modify it to format the results in an HTML table so that it looks something like
+Make a copy of example1.php called example2.php, and modify it to
+format the results in an HTML table so that it looks something like
 the following:
 
 <table>
