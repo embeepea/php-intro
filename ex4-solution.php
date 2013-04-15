@@ -4,7 +4,7 @@ include('weather.php');
 function printWeatherData($id) {
   global $stations;
   for ($i = 0; $i < count($stations); $i++) {
-    if ($stattions[$i]['id'] == $id) {
+    if ($stations[$i]['id'] == $id) {
       print "<table>";
       print "  <tr>";
       print "    <td>id</td>";
