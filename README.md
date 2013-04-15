@@ -837,7 +837,7 @@ join() functions.
 ##*ex8.php*
 
 Make a copy of your _ex4.php_ called _ex8.php_, and modify it so that along with the station details, it prints
-the temperature at the station for April 15, 2010.  
+the temperature at the station for April 15, 2010.    Your program's output should look something like this:
 
 > <table>
 > <tr>
@@ -859,3 +859,26 @@ the temperature at the station for April 15, 2010.
 > </table>
 > 
 > Temperature on April 15, 2010: 49.5
+
+<!-- ***************************************** -->
+##*ex9.php*
+
+Write _ex9.php_ by modifying _ex8.php_ so that in addition to taking
+an `id` parameter, it takes the three additional parameters `year`,
+`month`, and `day`, and it prints the temperature for the given
+station for the given year, montha, and day.  The month and day
+parameters should be 1-based month and day numbers.
+
+<!-- ***************************************** -->
+##*ex10.php*
+
+Add precipitation results to _ex9.php_.  Also enhance your program so that if the year, month, or day numbers are not valid or
+data is not available for the requested day, it prints an error message.
+
+<!-- ***************************************** -->
+##*ex11.php*
+
+Enhance your _ex10.php_ so that in addition to printing the temp and precip values for the requested station and day, it also
+prints the average temperature for the month (whichever month the requested day is in), and the total precipitation amount for
+that same month.
+
