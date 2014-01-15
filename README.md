@@ -1,3 +1,8 @@
+This repo contains some material that I wrote for a one-day crash course on PHP that I gave for the NEMAC staff in preparation for a Drupal training week in May, 2013.
+
+---
+
+
 #Introduction (Basic Execution, Server/Client Execution, HTTP)
 
 ##hello.php
